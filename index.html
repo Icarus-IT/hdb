@@ -23,6 +23,9 @@
     #img_box{   
         margin: 17.5%;
     }
+    #img{
+        
+    }
    
     </style>
 </head>
@@ -31,10 +34,23 @@
 
     </div>
    <div id="body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam,  maxime cupiditate accusamus animi eum reiciendis dolore atque voluptas vel, molestias sit? Accusamus neque asperiores iusto dolorem dolor libero velit fugiat, id repudiandae tenetur omnis, quia error quos inventore eius!
+       <h1>Hello Băng, sau đây là 1 vài lời chúc muốn gửi đến Băng :v </h1>
+        <img id="img" onClick="changeImage()" src="image/hopqua.jpg"  width = "30%">
    </div>
-</body>
-<footer>
 
-</footer>
+   <script>
+    var index =1;
+    function changeImage(){
+        var imgs = ["image/1.jpg","image/2.jpg","image/3.jpg"];
+        document.getElementById('img').src=imgs[index];
+        index++;
+        if (index==3){
+            index=0;
+        }
+        setInterval(changeImage,2000);
+             
+    }
+
+</script>
+</body>
 </html>
