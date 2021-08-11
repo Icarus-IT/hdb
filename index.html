@@ -18,13 +18,31 @@
         font-size: 20px;
         margin: 0 auto;
         width:40%;
-    
+      
+    }
+    #body_1{
+
+        display: block;
+        text-align: center;
+        font-size: 40px;
+        margin: 0 auto;
+        width:40%;
+        background-color:chartreuse;
+        color: blue;
     }
     #img_box{   
-        margin: 17.5%;
+        margin: 10.6%;
+        
     }
     #img{
-        
+        margin: 0 auto;
+    
+      
+        display: block;
+      
+        width:58%; /* you can use % */
+    height: auto;   
+    
     }
    
     </style>
@@ -33,8 +51,9 @@
     <div id="img_box">
 
     </div>
+    <h1 id="body_1">Hello Băng, sau đây là 1 vài lời chúc muốn gửi đến Băng :v </h1>
    <div id="body">
-       <h1>Hello Băng, sau đây là 1 vài lời chúc muốn gửi đến Băng :v </h1>
+      
         <img id="img" onClick="changeImage()" src="image/hopqua.jpg"  width = "30%">
    </div>
 
@@ -46,6 +65,7 @@
         index++;
         if (index==3){
             index=0;
+           
         }
         setInterval(changeImage,2000);
              
