@@ -7,7 +7,7 @@
     <title>Happy birthday</title>
     <style type="text/css">
     body{
-        background-image: url(image/background.png);
+        background-image: url(image/background.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
     }
@@ -60,15 +60,14 @@
    <script>
     var index =1;
     function changeImage(){
-        var imgs = ["image/1.jpg","image/2.jpg","image/3.jpg"];
+        var imgs = ["image/1.jpg","image/1.jpg","image/2.jpg","image/3.jpg","image/3.jpg"];
         document.getElementById('img').src=imgs[index];
         index++;
-        if (index==3){
-            index=0;
+        if (index==5){
+            index=1;
            
         }
-        setInterval(changeImage,2000);
-             
+        setInterval(changeImage,2000);     
     }
 
 </script>
